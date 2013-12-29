@@ -1,10 +1,25 @@
 package com.enjoysoft;
 
-public class Person {
-	private final String name;
 
-	public Person(String name) {
+public class Person {
+	private Long id;
+	private String name;
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public void setName(String name) {
 		this.name = name;
+	}
+
+	public Person() {
+		id = null;
+		name = null;
+	}
+
+	public Long getId() {
+		return id;
 	}
 
 	public String getName() {
